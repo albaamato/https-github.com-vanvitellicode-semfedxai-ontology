@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.org/semfedxai#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/semfedxai#Symptom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/semfedxai#Hypertension">
+    <rdf:type rdf:resource="http://example.org/semfedxai#Disease"/>
+    <ex:hasRiskFactor rdf:resource="http://example.org/semfedxai#HighSystolicPressure"/>
+    <rdfs:label>Hypertension</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/semfedxai#hasRiskFactor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/semfedxai#Disease"/>
+    <rdfs:range rdf:resource="http://example.org/semfedxai#RiskFactor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/semfedxai#Treatment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/semfedxai#HighSystolicPressure">
+    <rdf:type rdf:resource="http://example.org/semfedxai#RiskFactor"/>
+    <rdfs:label>High Systolic Pressure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/semfedxai#RiskFactor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/semfedxai#Disease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/semfedxai#Measurement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
